@@ -5,6 +5,7 @@
     "trailing-comma": true,
     "import-spacing": false,
     "no-multi-spaces": false,
+    "no-console": false,
     "typedef-whitespace": false
   }
 }

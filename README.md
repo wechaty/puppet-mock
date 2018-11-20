@@ -17,13 +17,19 @@ Puppet Mocker & Starter for Wechaty, it is very useful when you:
 
 Then `PuppetMock` will helps you a lot.
 
+## RUN
+```
+npm install
+npm run start
+```
+
 ## USAGE
 
 ```ts
-import { MemoryCard } from 'memory-card'
+import { Wechaty    } from 'wechaty'
 import { PuppetMock } from 'wechaty-puppet-mock'
 
-const puppet  = new PuppetMock({ memory: new MemoryCard() })
+const puppet  = new PuppetMock()
 const wechaty = new Wechaty({ puppet })
 ```
 
