@@ -50,7 +50,7 @@
     "@types/normalize-package-data": "^2.4.0",
     "@types/qr-image": "^3.2.1",
     "@types/quick-lru": "^2.0.0",
-    "@types/read-pkg-up": "^3.0.1",
+    "@types/read-pkg-up": "^6.0.0",
     "file-box": "^0.8.22",
     "memory-card": "^0.6.13",
     "pkg-jq": "^0.2.2",
