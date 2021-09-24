@@ -327,10 +327,10 @@ class PuppetMock extends Puppet {
     // }
     return {
       accuracy  : 15,
-      address   : "北京市北京市海淀区45 Chengfu Rd",
+      address   : '北京市北京市海淀区45 Chengfu Rd',
       latitude  : 39.995120999999997,
       longitude : 116.334154,
-      name      : "东升乡人民政府(海淀区成府路45号)",
+      name      : '东升乡人民政府(海淀区成府路45号)',
     }
   }
 
