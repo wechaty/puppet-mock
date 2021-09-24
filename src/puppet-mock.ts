@@ -26,6 +26,7 @@ import {
   FriendshipPayload,
 
   ImageType,
+  LocationPayload,
 
   MessagePayload,
 
@@ -318,6 +319,17 @@ class PuppetMock extends Puppet {
     }
   }
 
+  override async messageLocation (messageId: string): Promise<LocationPayload> {
+    log.verbose('PuppetMock', 'messageLocation(%s)', messageId)
+    // const attachment = this.mocker.MockMessage.loadAttachment(messageId)
+    // if (attachment instanceof MiniProgram) {
+    //   return attachment.payload
+    // }
+    return {
+      title : 'mock title for ' + messageId,
+    }
+  }
+
   override async messageMiniProgram (messageId: string): Promise<MiniProgramPayload> {
     log.verbose('PuppetMock', 'messageMiniProgram(%s)', messageId)
     // const attachment = this.mocker.MockMessage.loadAttachment(messageId)
@@ -388,6 +400,16 @@ class PuppetMock extends Puppet {
 
     // const url = new UrlLink(urlLinkPayload)
     // return this.messageSend(conversationId, url)
+  }
+
+  override async messageSendLocation (
+    conversationId: string,
+    locationPayload: LocationPayload,
+  ): Promise<void> {
+    log.verbose('PuppetMock', 'messageSendLocation(%s, %s)', conversationId, JSON.stringify(locationPayload))
+
+    // const location = new Location(locationPayload)
+    // return this.messageSend(conversationId, location)
   }
 
   override async messageSendMiniProgram (
