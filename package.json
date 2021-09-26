@@ -63,7 +63,7 @@
     "shx": "^0.3.3",
     "tstest": "^0.5.16",
     "typescript": "4.4",
-    "wechaty": "^0.69.41"
+    "wechaty": "^0.73.2"
   },
   "peerDependencies": {
     "wechaty-puppet": ">=0.47.2"
